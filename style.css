@@ -7,8 +7,8 @@ body {
 /* Top Section  */
 .container {
     background-color: rgb(32, 26, 26);
-    width: 70%;
-    margin: 50px auto 0 auto;
+    width: 80%;
+    margin: 100px auto;
     border-radius: 15px;
     display: flex;
 }
@@ -30,43 +30,93 @@ body {
 
 .right img {
     height: auto;
-    width: 500px;
-    margin: 0;
+    margin-bottom: 0;
+
 }
 
 /* Bottom Section  */
 .bottom-container {
-    border: 2px solid red;
-    width: 70%;
+    width: 80%;
     margin: 50px auto 100px auto;
     display: flex;
 }
 
+.bottom-left {
+    margin-right: 30px;
+    background-color: black;
+    width: 200px;
+    height: 200px;
+}
+
+.bottom-left>h3 {
+    background-color: rgb(134, 194, 152);
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .bottom-right {
-    border: 1px solid indigo;
-    height: 820px;
+    height: 100%;
+    border-radius: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 10px;
     column-gap: 10px;
+
 }
 
 .bottom-right img {
     width: 100%;
-    border: 1px solid blue;
 }
 
-.bottom-left {
-    margin-right: 39px;
+.matches {
+    background-color: rgb(167, 207, 164);
 }
 
-.bottom-right .matches {
-    border: 2px solid blue;
-    height: 99%
+.matches>span {
+    display: flex;
+    flex-direction: row;
 }
+
+.matches>span>img {
+    width: 10px;
+    height: 10px;
+}
+
+.matches>h6 h5 {
+    padding: 20px;
+
+}
+
 
 /* footer  */
 footer {
     background-color: black;
     color: white;
+    height: 250px;
+}
+
+.interms {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: space-between;
+    text-align: center;
+}
+
+footer>h3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.icons {
+    margin: 0 auto;
+    width: 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: space-between;
+    text-align: center;
 }
